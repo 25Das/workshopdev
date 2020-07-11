@@ -21,7 +21,7 @@
 				font-weight: bold;
 			}
 
-			.fat {
+			button.fat {
 				color: white;
 				background: #ff5e84;
 			}
@@ -29,6 +29,10 @@
 			#footer a {
 				color: #25282b;
 				text-decoration: none;
+			}
+
+			.hide {
+				display: none;
 			}
 		</style>
 	</head>
@@ -51,5 +55,11 @@
 		<button class="fat">Ver ideias</button>
 
 		<p id="footer">com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+
+		<script>
+			document.querySelector('button.fat').addEventListener('click', function () {
+				document.querySelector('#footer').classList.toggle('hide');
+			});
+		</script>
 	</body>
 </html>

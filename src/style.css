@@ -76,3 +76,36 @@ button.fat:hover {
 footer {
 	text-align: center;
 }
+
+/* Last Ideas */
+
+.idea {
+	display: flex;
+
+	margin-bottom: 32px;
+	border-radius: 8px;
+	padding: 32px;
+	box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+
+	background-color: #fff;
+}
+
+.idea img {
+	width: 60px;
+	height: 60px;
+
+	margin-right: 32px;
+}
+
+.idea h3 {
+	margin: 0;
+}
+
+.idea p {
+	margin: 8px 0;
+	color: #777;
+}
+
+.idea .description {
+	margin: 16px 0;
+}

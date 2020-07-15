@@ -34,7 +34,7 @@
 			</main>
 
 			<section id="buttons">
-				<button>+ Adicionar Ideia</button>
+				<button onclick="onOff()">+ Adicionar Ideia</button>
 				<button class="fat">Ver ideias</button>
 			</section>
 
@@ -94,7 +94,7 @@
 
 	<!-- Modal -->
 
-	<div id="modal">
+	<div id="modal" class="hide">
 		<div class="content">
 			<h1>Nova Ideia</h1>
 			<form action="">
@@ -122,6 +122,8 @@
 					<label for="link">Link da Ideia</label>
 					<input type="url" name="link" />
 				</div>
+
+				<a href="#" onclick="onOff()">Voltar</a>
 				<button>Salvar</button>
 			</form>
 		</div>

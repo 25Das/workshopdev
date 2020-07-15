@@ -7,10 +7,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.hide {
-	display: none;
-}
-
 a {
 	color: #ff5e84;
 	font-weight: bold;
@@ -147,6 +143,8 @@ footer a {
 
 	display: flex;
 	justify-content: center;
+
+	transition: 400ms;
 }
 
 #modal .content {
@@ -203,6 +201,34 @@ form label {
 	letter-spacing: 0.8px;
 }
 
+form a {
+	width: 150px;
+	height: 40px;
+
+	background-color: #FFFFFF22;
+	color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	align-self: end;
+
+	font-size: 14px;
+	font-weight: bold;
+
+	border-radius: 6px;
+
+	transition: 400ms;
+}
+
+form a:hover {
+	background: #FFF;
+	color: #ff5e84;
+
+	text-decoration: none;
+}
+
 form button {
 	background: white;
 
@@ -217,6 +243,8 @@ form button {
 
 	grid-column: 2;
 	justify-self: end;
+
+	transition: 400ms;
 }
 
 form button:hover {
@@ -224,4 +252,9 @@ form button:hover {
 	color: white;
 
 	text-decoration: none;
+}
+
+#modal.hide {
+	opacity: 0;
+	visibility: hidden;
 }

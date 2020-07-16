@@ -1,0 +1,28 @@
+{
+	"name": "workshopdev",
+	"version": "1.0.0",
+	"description": "Programação Web Básica",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js"
+	},
+	"repository": "https://github.com/25Das/WorkshopDev.git",
+	"author": "25Das <daniel.raizon@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^7.4.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"nodemon": "^2.0.4",
+		"prettier": "^2.0.5",
+		"yarn": "^1.22.4"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"nunjucks": "^3.2.1",
+		"sqlite3": "^5.0.0"
+	}
+}

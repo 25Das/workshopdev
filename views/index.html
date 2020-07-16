@@ -1,55 +1,39 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'layout.html' %}
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Casa Criativa</title>
+{% block content %}
 
-	{% include "head.html" %}
-</head>
+<section id="intro">
+	<header>
+		<a href="/">
+			<img src="/logo.png" alt="Imagem da Logomarca" />
+		</a>
+	</header>
 
-<body>
+	<main>
+		<p>
+			Ficar em casa em períodos longos, não deve ser nada fácil.
+		</p>
+		<p>
+			Por isso, iremos catalogar,
+			<strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo
+			que for necessário para tornar esse momento mais interessante.
+		</p>
+		<p>
+			Comece clicando em ver ideias para ver as ideias cadastradas e contribua
+			adicionando a sua ideia.
+		</p>
+	</main>
 
-	<div id="container">
-		<section id="intro">
-			<header>
-				<a href="/">
-					<img src="/logo.png" alt="Imagem da Logomarca" />
-				</a>
-			</header>
+	<section id="buttons">
+		<button onclick="onOff()">+ Adicionar Ideia</button>
+		<a href="/ideias" class="button">Ver ideias</a>
+	</section>
 
-			<main>
-				<p>
-					Ficar em casa em períodos longos, não deve ser nada fácil.
-				</p>
-				<p>
-					Por isso, iremos catalogar,
-					<strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo
-					que for necessário para tornar esse momento mais interessante.
-				</p>
-				<p>
-					Comece clicando em ver ideias para ver as ideias cadastradas e contribua
-					adicionando a sua ideia.
-				</p>
-			</main>
+	<footer>Com ♥️ <a href="http://rocketseat.com.br" target="blank">Rocketseat</a></footer>
+</section>
 
-			<section id="buttons">
-				<button onclick="onOff()">+ Adicionar Ideia</button>
-				<a href="/ideias" class="button">Ver ideias</a>
-			</section>
+<section id="last-ideas">
+	{% include "all_Ideas.html" %}
+</section>
 
-			<footer>Com ♥️ <a href="http://rocketseat.com.br" target="blank">Rocketseat</a></footer>
-		</section>
-
-		<section id="last-ideas">
-			{% include "all_Ideas.html" %}
-		</section>
-	</div>
-
-	{% include "modal.html" %}
-
-	<script src="/scripts.js"></script>
-</body>
-
-</html>
+{% endblock %}
